@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Button} from 'react-native';
-import TestText from '../components/TestText'
+import {StyleSheet, View, Text, Button} from 'react-native';
 
-export default class Home extends Component {
+export default class Other extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <TestText textId={'5c6eb3fe3400003900892e79'}/>
+        <Text style={styles.text}>This is some other text...</Text>
         <Button
-          title="See the Other Text"
-          onPress={() => this.props.navigation.navigate('Other')}
+          title="See the Original Text"
+          onPress={() => this.props.navigation.navigate('Home')}
         />
       </View>
     )
@@ -23,6 +22,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  text: {
+    fontSize: 30,
+    textAlign: 'center'
   }
 })
 

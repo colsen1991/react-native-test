@@ -2,11 +2,11 @@ import React, {Component} from 'react'
 import {View, Text, StyleSheet} from 'react-native';
 import {connect} from 'react-redux';
 
-import {getText} from '../reducers/text'
+import {getText} from '../reducers/testText'
 
 class TestText extends Component {
   componentDidMount () {
-    this.props.getText()
+    this.props.getText(this.props.textId)
   }
 
   render () {

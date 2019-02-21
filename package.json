@@ -1,15 +1,18 @@
 {
-  "name": "ReactNativeTest",
+  "name": "react-native-test",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "dev": "react-native run-android",
     "test": "jest"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "react": "16.6.3",
     "react-native": "0.58.4",
+    "react-native-gesture-handler": "^1.0.16",
+    "react-navigation": "^3.3.0",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1",
     "redux-axios-middleware": "^4.0.0"
